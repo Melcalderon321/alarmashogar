@@ -1343,6 +1343,16 @@ a {
     max-width: 660px;
 }
 
+.upgrade-tag {
+    font-size: 13px;
+    font-weight: 800;
+    color: var(--primary-orange);
+    text-transform: uppercase;
+    letter-spacing: 1.2px;
+    margin-bottom: 6px;
+    display: inline-block;
+}
+
 .upgrade-title {
     font-size: 32px;
     font-weight: 800;
