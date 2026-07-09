@@ -2226,9 +2226,21 @@ textarea.form-input {
     color: var(--primary-orange);
 }
 
+.footer-distributor-badge {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
 .footer-logo-badge-img {
     height: 30px;
     width: auto;
+}
+
+.footer-extra-logo-img {
+    height: 35px;
+    width: auto;
+    object-fit: contain;
 }
 
 /* ==========================================================================
