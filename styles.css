@@ -302,6 +302,12 @@ a {
     gap: 24px;
 }
 
+.nav-extra-logo-img {
+    height: 35px;
+    width: auto;
+    object-fit: contain;
+}
+
 .nav-link {
     font-size: 14px;
     font-weight: 700;

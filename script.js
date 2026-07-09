@@ -1,31 +1,4 @@
-// ==========================================================================
-// Mobile Hamburger Menu Drawer
-// ==========================================================================
-const menuTrigger = document.getElementById('menu-trigger');
-const menuCloseBtn = document.getElementById('menu-close-btn');
-const menuDrawer = document.getElementById('menu-drawer');
-const drawerOverlay = document.getElementById('drawer-overlay');
-const drawerCloseTriggers = document.querySelectorAll('.drawer-close-trigger');
-
-function openMenu() {
-    menuDrawer.classList.add('open');
-    drawerOverlay.classList.add('active');
-    document.body.style.overflow = 'hidden'; // Prevent background scrolling
-}
-
-function closeMenu() {
-    menuDrawer.classList.remove('open');
-    drawerOverlay.classList.remove('active');
-    document.body.style.overflow = '';
-}
-
-if (menuTrigger) menuTrigger.addEventListener('click', openMenu);
-if (menuCloseBtn) menuCloseBtn.addEventListener('click', closeMenu);
-if (drawerOverlay) drawerOverlay.addEventListener('click', closeMenu);
-
-drawerCloseTriggers.forEach(trigger => {
-    trigger.addEventListener('click', closeMenu);
-});
+// Mobile Hamburger Menu Drawer removed
 
 // ==========================================================================
 // Hero Section Calculator Logic
