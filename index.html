@@ -1,0 +1,1119 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+    
+    <title>Alarmas Hogar - Protección para tu vivienda o negocio</title>
+    <meta name="description" content="Soluciones de seguridad y alarmas para hogares y negocios con monitorización 24/7"/>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    
+    <!-- Main Stylesheet -->
+    <link rel="stylesheet" href="styles.css"/>
+</head>
+<body>
+    
+    
+    <!-- Main Header -->
+    <header class="main-header" id="header">
+        <div class="header-container">
+            <div class="distributor-logo">
+                <img src="images/nav-logo.png" alt="Alarmas Hogar" class="nav-logo-img"/>
+            </div>
+            
+            <div class="header-menu-container">
+                <!-- Mobile Phone CTA -->
+                <a href="tel:+34935565012" class="mobile-phone-cta md-hide">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-phone-call">
+                        <path d="M13 2a9 9 0 0 1 9 9"></path>
+                        <path d="M13 6a5 5 0 0 1 5 5"></path>
+                        <path d="M13.832 16.568a1 1 0 0 0 1.213-.303l.355-.465A2 2 0 0 1 17 15h3a2 2 0 0 1 2 2v3a2 2 0 0 1-2 2A18 18 0 0 1 2 4a2 2 0 0 1 2-2h3a2 2 0 0 1 2 2v3a2 2 0 0 1-.8 1.6l-.468.351a1 1 0 0 0-.292 1.233 14 14 0 0 0 6.392 6.384"></path>
+                    </svg>
+                    <div class="phone-label-wrapper">
+                        <span class="phone-label-top">LLAMAR GRATIS</span>
+                        <span class="phone-label-num">935 565 012</span>
+                    </div>
+                </a>
+                
+                <!-- Hamburger Menu Trigger -->
+                <button class="mobile-menu-trigger" id="menu-trigger" aria-label="Abrir menú">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-menu">
+                        <line x1="4" x2="20" y1="12" y2="12"></line>
+                        <line x1="4" x2="20" y1="6" y2="6"></line>
+                        <line x1="4" x2="20" y1="18" y2="18"></line>
+                    </svg>
+                </button>
+                
+                <!-- Desktop Navigation Links -->
+                <nav class="desktop-nav">
+                    <a href="/" class="nav-link active">Inicio</a>
+                    <a href="#alarma" class="nav-link">¿Qué incluye tu alarma?</a>
+                    <a href="#products" class="nav-link">Elementos de la alarma</a>
+                    <a href="#segunda-vivienda" class="nav-link">Segunda Vivienda</a>
+                    <a href="#faqs" class="nav-link">Dudas</a>
+                </nav>
+            </div>
+        </div>
+    </header>
+    
+    <!-- Mobile Navigation Menu Sidebar Drawer -->
+    <div class="mobile-menu-drawer" id="menu-drawer">
+        <button class="menu-close-btn" id="menu-close-btn" aria-label="Cerrar menú">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-x">
+                <line x1="18" x2="6" y1="6" y2="18"></line>
+                <line x1="6" x2="18" y1="6" y2="18"></line>
+            </svg>
+        </button>
+        <div class="drawer-content">
+            <a href="#" class="drawer-link drawer-close-trigger">Inicio</a>
+            <a href="#alarma" class="drawer-link drawer-close-trigger">¿Qué incluye tu alarma?</a>
+            <a href="#products" class="drawer-link drawer-close-trigger">Elementos de la alarma</a>
+            <a href="#segunda-vivienda" class="drawer-link drawer-close-trigger">Segunda Vivienda</a>
+            <a href="#faqs" class="drawer-link drawer-close-trigger">Dudas</a>
+            <button class="drawer-calcula-btn drawer-close-trigger" onclick="openCalculatorModal()">Calcula tu precio</button>
+        </div>
+    </div>
+    <div class="drawer-overlay" id="drawer-overlay"></div>
+
+    <main class="content-wrapper">
+        
+
+        <!-- Hero Section / Main Banner -->
+        <section class="hero-section">
+            <div class="hero-bg-container">
+                <img src="images/hero-banner.png" alt="Alarmas Hogar - Promoción especial" class="hero-bg-image"/>
+            </div>
+            
+            <div class="hero-content-wrapper">
+                <div class="hero-text-block">
+                    <h1 class="hero-title">Protegemos lo que<br><span class="hero-title-accent">más importa</span></h1>
+                    
+                    <div class="price-badge-box">
+                        <div class="price-badge-header">¡SOLO ESTE MES!</div>
+                        <div class="price-badge-body">
+                            <span class="price-label">Por<br/>solo</span>
+                            <span class="price-huge-number">19</span>
+                            <div class="price-badge-right">
+                                <span class="price-euro-cents">'90<span class="price-currency">€/mes</span></span>
+                                <span class="price-duration">durante 12 meses</span>
+                            </div>
+                        </div>
+                        <div class="price-badge-footer">Los 12 primeros meses | Instalación GRATIS | IVA incluido*</div>
+                    </div>
+                </div>
+
+            <!-- Floating circular calculator trigger button bottom right of hero -->
+            <button class="hero-calculator-fab" onclick="openCalculatorModal()" aria-label="Calcular precio de alarma">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" width="28" height="28" class="lucide lucide-calculator">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 15.75V18m-7.5-6.75h.008v.008H8.25v-.008Zm0 2.25h.008v.008H8.25V13.5Zm0 2.25h.008v.008H8.25v-.008Zm0 2.25h.008v.008H8.25V18Zm2.498-6.75h.007v.008h-.007v-.008Zm0 2.25h.007v.008h-.007V13.5Zm0 2.25h.007v.008h-.007v-.008Zm0 2.25h.007v.008h-.007V18Zm2.504-6.75h.008v.008h-.008v-.008Zm0 2.25h.008v.008h-.008V13.5Zm0 2.25h.008v.008h-.008v-.008Zm0 2.25h.008v.008h-.008V18Zm2.498-6.75h.008v.008h-.008v-.008Zm0 2.25h.008v.008h-.008V13.5ZM8.25 6h7.5v2.25h-7.5V6ZM12 2.25c-1.892 0-3.758.11-5.593.322C5.307 2.7 4.5 3.65 4.5 4.757V19.5a2.25 2.25 0 0 0 2.25 2.25h10.5a2.25 2.25 0 0 0 2.25-2.25V4.757c0-1.108-.806-2.057-1.907-2.185A48.507 48.507 0 0 0 12 2.25Z" />
+                </svg>
+                <span class="fab-hover-text">Calcula tu alarma</span>
+            </button>
+        </section>
+
+        <!-- CTA Section: Agenda tu Visita -->
+        <div class="agenda-cta-bar">
+            <div class="agenda-container">
+                <div class="agenda-text-block">
+                    <p class="agenda-subtitle">También puedes…</p>
+                    <h2 class="agenda-title">Coordine una visita orientativa sin cargo</h2>
+                    <p class="agenda-description">Completa el formulario y un especialista hará un estudio de seguridad adaptado a ti y a tu familia</p>
+                </div>
+                <button class="btn-orange" onclick="document.getElementById('presupuesto').scrollIntoView({behavior: 'smooth'})">
+                    <svg width="17" height="16" viewBox="0 0 17 16" xmlns="http://www.w3.org/2000/svg" class="agenda-btn-icon">
+                        <path d="M2.619 16c-.428 0-.794-.157-1.099-.47a1.563 1.563 0 0 1-.457-1.13V3.2c0-.44.153-.817.457-1.13.305-.313.671-.47 1.099-.47h.778V0h1.555v1.6h6.222V0h1.556v1.6h.778c.428 0 .794.157 1.098.47.305.313.457.69.457 1.13v11.2c0 .44-.152.817-.457 1.13-.304.313-.67.47-1.098.47H2.618zm0-1.6h10.889v-8H2.618v8zm0-9.6h10.889V3.2H2.618v1.6zm.04 0V3.2v1.6z" fill="currentColor" fill-rule="nonzero"></path>
+                    </svg>
+                    <span>Agenda tu visita</span>
+                </button>
+            </div>
+        </div>
+
+        <!-- Services Section: Protege tu hogar con todo incluido -->
+        <section id="alarma" class="services-list-section">
+            <div class="services-container">
+                <h2 class="services-section-title">Protege tu hogar con todo incluido</h2>
+                
+                <div class="services-grid">
+                    <!-- Service 1 -->
+                    <div class="service-item">
+                        <div class="service-icon-box">
+                            <svg width="32" height="32" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M23.1 1.333c.276 0 .5.222.5.494v14.688l-1-.988V2.321H1V29.68h21.6v-5.746l1 .987v5.253a.497.497 0 0 1-.5.494H.5a.497.497 0 0 1-.5-.494V1.827c0-.272.224-.494.5-.494h22.6zm-8.029 10.331-.013.035.013-.034 4.41 1.578a.497.497 0 0 1 .23.13l12.143 11.991a.49.49 0 0 1 0 .699l-2.842 2.806a.505.505 0 0 1-.707 0L16.163 16.877l-.019-.018a.493.493 0 0 1-.022-.026l.04.044a.494.494 0 0 1-.116-.18l-1.601-4.367a.486.486 0 0 1-.014-.37.501.501 0 0 1 .64-.296zm4.287 2.757-1.85 1.826-.285.281L28.66 27.822l2.134-2.109-11.435-11.292zm-.21 9.965v.987H4.45v-.987h14.697zm-.415-4.272.415.41v.578H4.452v-.988h14.28zm-3.53-4.272.205.561.155.427H4.452v-.988h10.75zm.53-2.893.984 2.682 1.733-1.71-2.717-.972zm-1.258-1.714a.992.992 0 0 0-.514.557.955.955 0 0 0-.052.43H4.452v-.987h10.023zm4.673-4.608v.987H4.45v-.987h14.697z" fill="#FF6800" fill-rule="evenodd"></path>
+                            </svg>
+                        </div>
+                        <p class="service-description">Diagnóstico de seguridad a tu medida sin costo.</p>
+                    </div>
+                    
+                    <!-- Service 2 -->
+                    <div class="service-item">
+                        <div class="service-icon-box">
+                            <svg width="32" height="32" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M20.528 20.617c2.509.226 4.757.634 6.57 1.174 3.028.9 4.902 2.222 4.902 3.752 0 1.529-1.874 2.85-4.901 3.751-2.852.848-6.776 1.373-11.099 1.373s-8.248-.525-11.099-1.373C1.873 28.394 0 27.072 0 25.543c0-1.53 1.873-2.852 4.901-3.752 1.813-.539 4.06-.948 6.568-1.174.215.328.432.653.652.978-2.673.207-5.057.62-6.943 1.182C2.597 23.544 1 24.527 1 25.543c0 1.015 1.597 1.998 4.178 2.766 2.76.82 6.585 1.327 10.822 1.327 4.237 0 8.062-.507 10.822-1.327C29.403 27.54 31 26.559 31 25.543s-1.597-2-4.178-2.766c-1.887-.562-4.271-.976-6.945-1.183.219-.324.436-.65.65-.977zm-1.563 2.315c1.816.104 3.442.301 4.745.564 2.198.446 3.558 1.163 3.558 2.046 0 .885-1.36 1.602-3.558 2.046-1.98.4-4.706.649-7.71.649-3.005 0-5.731-.248-7.71-.649-2.199-.444-3.559-1.161-3.559-2.046 0-.883 1.36-1.6 3.559-2.046 1.302-.263 2.928-.46 4.744-.564l.69.995c-2.026.09-3.834.294-5.243.58-1.699.343-2.75.716-2.75 1.035 0 .32 1.051.692 2.75 1.036 1.918.389 4.576.628 7.519.628 2.943 0 5.6-.24 7.519-.628 1.698-.344 2.75-.716 2.75-1.036 0-.32-1.052-.692-2.75-1.035-1.408-.286-3.216-.49-5.242-.58l.688-.995zM16 1.333c2.371 0 4.517.99 6.072 2.591a8.947 8.947 0 0 1 2.515 6.253c0 3.77-3.893 9.381-6.922 13.747-.461.665-.904 1.303-1.252 1.816a.487.487 0 0 1-.695.127.5.5 0 0 1-.14-.152c-.416-.609-.768-1.113-1.135-1.639-3.057-4.387-7.03-10.088-7.03-13.899 0-2.442.961-4.653 2.515-6.253 1.554-1.6 3.7-2.59 6.072-2.59zm0 1.03c-2.095 0-3.992.875-5.365 2.29a7.904 7.904 0 0 0-2.222 5.524c0 3.486 3.865 9.033 6.838 13.3l.752 1.08c.284-.414.563-.816.85-1.23 2.947-4.246 6.734-9.705 6.734-13.15 0-2.158-.85-4.111-2.222-5.525-1.373-1.414-3.27-2.288-5.365-2.288zm0 3.829c1.069 0 2.036.446 2.736 1.167a4.033 4.033 0 0 1 1.134 2.817c0 1.101-.434 2.098-1.134 2.819A3.802 3.802 0 0 1 16 14.162a3.802 3.802 0 0 1-2.736-1.167 4.033 4.033 0 0 1-1.134-2.819c0-1.1.433-2.096 1.134-2.817A3.802 3.802 0 0 1 16 6.192zm0 1.03c-.793 0-1.51.33-2.03.865a2.993 2.993 0 0 0-.84 2.09c0 .816.322 1.554.84 2.09a2.82 2.82 0 0 0 2.03.865c.792 0 1.51-.331 2.03-.866.518-.535.84-1.273.84-2.09 0-.815-.322-1.554-.84-2.089A2.821 2.821 0 0 0 16 7.222z" fill="#FF6800" fill-rule="evenodd"></path>
+                            </svg>
+                        </div>
+                        <p class="service-description">Instalación especializada gratis y en tiempo récord.</p>
+                    </div>
+                    
+                    <!-- Service 3 -->
+                    <div class="service-item">
+                        <div class="service-icon-box">
+                            <svg width="32" height="32" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
+                                <path d="m16.31 1.444 5.18 4.2V3.085c0-.284.224-.515.5-.515h3.48c.276 0 .499.23.499.515v6.188l5.443 4.413c.668.542.784 1.543.259 2.232a1.522 1.522 0 0 1-1.215.606c-.344 0-.676-.117-.95-.34l-.956-.775v14.741a.507.507 0 0 1-.5.516H3.95c-.276 0-.5-.23-.5-.516v-14.74l-.954.774a1.514 1.514 0 0 1-2.166-.266 1.613 1.613 0 0 1-.319-1.171c.049-.422.254-.798.577-1.06L15.691 1.443a.488.488 0 0 1 .619 0zM16 5.236 4.45 14.6v15.037h23.1V14.599L16 5.236zm0 5.547c.603 0 1.188.121 1.74.362.531.232 1.009.564 1.419.986.41.422.731.914.956 1.463.233.568.351 1.17.351 1.791v2.112h1.376c.276 0 .5.231.5.516v9.198a.507.507 0 0 1-.5.515H10.159c-.276 0-.5-.23-.5-.515v-9.198c0-.285.224-.515.5-.515h1.375v-2.113c0-.62.119-1.223.352-1.791.224-.549.547-1.041.956-1.463.41-.422.888-.754 1.42-.986A4.32 4.32 0 0 1 16 10.783zm5.341 7.745H10.66v8.167h10.682v-8.167zm-5.34 1.306c1.019 0 1.848.854 1.848 1.905 0 .871-.571 1.608-1.348 1.834v1.302a.507.507 0 0 1-.5.515c-.277 0-.5-.231-.5-.515l-.001-1.302c-.777-.226-1.348-.963-1.348-1.834 0-1.05.83-1.905 1.848-1.905zm0 1.03a.863.863 0 0 0-.85.875c0 .482.382.874.85.874a.863.863 0 0 0 .848-.874.863.863 0 0 0-.849-.875zm0-9.05a3.35 3.35 0 0 0-1.35.28 3.559 3.559 0 0 0-1.845 1.9c-.18.441-.272.91-.272 1.391v2.112h6.932v-2.112c0-.482-.09-.95-.272-1.39a3.567 3.567 0 0 0-.743-1.135 3.453 3.453 0 0 0-1.101-.766 3.356 3.356 0 0 0-1.35-.28zm0-9.31L1.207 14.497a.568.568 0 0 0-.091.784.532.532 0 0 0 .761.094l13.814-11.2a.49.49 0 0 1 .619 0l13.814 11.2a.527.527 0 0 0 .76-.094.57.57 0 0 0-.09-.784L16 2.504zm8.969 1.098h-2.48v2.852l2.479 2.01V3.602z" fill="#FF6800" fill-rule="evenodd"></path>
+                            </svg>
+                        </div>
+                        <p class="service-description">Vigilancia segura 24/7 con protección anti-inhibición.</p>
+                    </div>
+                    
+                    <!-- Service 4 -->
+                    <div class="service-item">
+                        <div class="service-icon-box">
+                            <svg width="32" height="32" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M19.53 6.632c1.994 0 3.524.64 4.609 1.708 1.187 1.168 1.812 2.831 1.91 4.715l.776 14.966h4.508V32H.667v-3.979h4.507l.776-14.966c.098-1.884.725-3.547 1.91-4.715 1.085-1.068 2.615-1.708 4.61-1.708h7.06zm10.525 22.715H1.945v1.326h28.11v-1.326zM19.53 7.958H12.47c-1.645 0-2.88.503-3.73 1.34-.94.924-1.436 2.275-1.517 3.824L6.45 28.021h19.1l-.774-14.899c-.08-1.55-.577-2.9-1.516-3.824-.85-.837-2.086-1.34-3.73-1.34zm-4.168-2.652h1.278V0H15.36v5.306zM23.5.979l-2.47 4.646-1.118-.638 2.47-4.645L23.5.98zM10.204.342l2.47 4.646-1.119.637L9.087.979l1.118-.637z" fill="#FF6800" fill-rule="evenodd"></path>
+                            </svg>
+                        </div>
+                        <p class="service-description">Alerta instantánea a la policía y emergencias.</p>
+                    </div>
+                    
+                    <!-- Service 5 -->
+                    <div class="service-item">
+                        <div class="service-icon-box">
+                            <svg width="32" height="32" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M22.944 0c1.318 0 2.39 1.104 2.39 2.462v27.076c0 1.358-1.072 2.462-2.39 2.462H9.056c-1.318 0-2.39-1.104-2.39-2.462V2.462C6.667 1.104 7.739 0 9.057 0h13.888zm0 1.23H9.056c-.658 0-1.195.553-1.195 1.232v24.614H21.75c.33 0 .598.276.598.617 0 .34-.268.615-.598.615l-13.89-.001.001 1.231c0 .679.537 1.231 1.195 1.231h13.888c.658 0 1.195-.552 1.195-1.23V4.922H10.25a.607.607 0 0 1-.597-.616c0-.34.268-.615.597-.615H24.14v-1.23c0-.679-.537-1.231-1.195-1.231zm-4.494 9.396a.629.629 0 0 1-.022.87l-5.426 5.307a.586.586 0 0 1-.845-.022.629.629 0 0 1 .022-.87l5.426-5.307a.586.586 0 0 1 .845.022zM15.736 8.52a.628.628 0 0 1-.022.871l-2.652 2.595a.586.586 0 0 1-.845-.023.629.629 0 0 1 .022-.87l2.654-2.595a.584.584 0 0 1 .843.022z" fill="#FF6800" fill-rule="evenodd"></path>
+                            </svg>
+                        </div>
+                        <p class="service-description">App para gestionar tu seguridad desde el móvil en vivo.</p>
+                    </div>
+                    
+                    <!-- Service 6 -->
+                    <div class="service-item">
+                        <div class="service-icon-box">
+                            <svg width="32" height="32" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M16.567 0c.743 0 1.42.245 1.914.641.322.259.568.58.711.941.437-.258 1.007-.39 1.66-.39.744 0 1.421.245 1.915.64.525.42.848 1.01.848 1.67v1.675a2.38 2.38 0 0 1 1.35-.417 2.39 2.39 0 0 1 1.671.677c.43.42.697.997.697 1.632v16.07c0 2.04-.805 8.861-9.796 8.861l-.042-.002c-4.798-.377-7.15-3.823-10.246-8.36-1.012-1.481-2.106-3.084-3.398-4.736l-.026-.037-.007-.012a2.915 2.915 0 0 1-.44-2.108c.13-.706.531-1.342 1.176-1.746l.012-.008a2.768 2.768 0 0 1 2.145-.296 3.106 3.106 0 0 1 1.78 1.268l1.495 2V4.694c0-.637.264-1.214.69-1.632a2.374 2.374 0 0 1 1.671-.677c.51 0 1.026.073 1.457.259l-.001-.333c0-.657.324-1.248.85-1.669C15.147.245 15.823 0 16.567 0zm0 1.051c-.488 0-.924.155-1.234.404-.281.225-.455.529-.455.855v11.31h-1.075V4.205a.58.58 0 0 0-.272-.518c-.282-.183-.724-.252-1.184-.252-.356 0-.678.14-.91.368-.233.226-.376.54-.376.89v14.878l-.97.31-2.468-3.3-.017-.026a2.032 2.032 0 0 0-1.172-.845 1.676 1.676 0 0 0-1.294.166l-.008.007a1.55 1.55 0 0 0-.7 1.047c-.08.437.009.92.283 1.351 1.299 1.66 2.402 3.278 3.424 4.774 2.927 4.288 5.15 7.546 9.415 7.894 7.868-.009 8.681-5.834 8.704-7.725V7.069c0-.347-.144-.662-.377-.889a1.31 1.31 0 0 0-1.827.001c-.233.226-.376.54-.376.888h-.063v7.743H22.54V3.502c0-.33-.173-.632-.453-.856-.31-.25-.747-.403-1.235-.403-.513 0-.927.1-1.195.296-.207.152-.326.38-.326.683V13.62h-1.075V2.31c0-.326-.174-.63-.456-.855-.31-.249-.746-.404-1.233-.404z" fill="#FF6800" fill-rule="evenodd"></path>
+                            </svg>
+                        </div>
+                        <p class="service-description">Incluye mantenimiento total de tu equipo.</p>
+                    </div>
+                </div>
+                
+                <div class="services-actions">
+                    <button class="btn-orange" onclick="document.getElementById('presupuesto').scrollIntoView({behavior: 'smooth'})">Calcula tu precio</button>
+                    <button class="btn-secondary" onclick="document.getElementById('contacto').scrollIntoView({behavior: 'smooth'})">Infórmate gratis</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Products Section: ¿Qué dispositivos de seguridad para el hogar tenemos disponibles? -->
+        <section id="products" class="products-section">
+            <div class="products-container">
+                <h2 class="products-section-title">¿Qué dispositivos de seguridad para el hogar tenemos disponibles?</h2>
+                <div class="products-promo-badge">
+                    <span>¡Solo este mes!</span> Tu alarma por 19,90€ al mes
+                </div>
+                
+                <div class="products-center-image-box">
+                    <img src="images/products/img-alarmas.png" alt="Equipo completo de alarma" class="alarm-kit-image"/>
+                </div>
+                
+                <!-- Product Carousel Navigation Grid -->
+                <div class="product-selection-grid" id="product-selection-grid">
+                    <button class="grid-nav-item active" data-index="0">
+                        <img src="images/products/product-1.webp" alt="Central de alarma"/>
+                        <span>Central de alarma</span>
+                    </button>
+                    <button class="grid-nav-item" data-index="1">
+                        <img src="images/products/product-2.webp" alt="PIR Cam"/>
+                        <span>PIR Cam</span>
+                    </button>
+                    <button class="grid-nav-item" data-index="2">
+                        <img src="images/products/product-3.webp" alt="PIR"/>
+                        <span>PIR</span>
+                    </button>
+                    <button class="grid-nav-item" data-index="3">
+                        <img src="images/products/product-4.webp" alt="Magnético"/>
+                        <span>Magnético</span>
+                    </button>
+                    <button class="grid-nav-item" data-index="4">
+                        <img src="images/products/product-5.webp" alt="Rotura cristal"/>
+                        <span>Rotura cristal</span>
+                    </button>
+                    <button class="grid-nav-item" data-index="5">
+                        <img src="images/products/product-6.webp" alt="Cortina exterior"/>
+                        <span>Cortina exterior</span>
+                    </button>
+                    <button class="grid-nav-item" data-index="6">
+                        <img src="images/products/product-7.webp" alt="Teclado inalámbrico"/>
+                        <span>Teclado inalámbrico</span>
+                    </button>
+                    <button class="grid-nav-item" data-index="7">
+                        <img src="images/products/product-8.webp" alt="Sirena interior"/>
+                        <span>Sirena interior</span>
+                    </button>
+                    <button class="grid-nav-item" data-index="8">
+                        <img src="images/products/product-9.webp" alt="Mando con botón SOS"/>
+                        <span>Mando con botón SOS</span>
+                    </button>
+                    <button class="grid-nav-item" data-index="9">
+                        <img src="images/products/product-10.webp" alt="Tag"/>
+                        <span>Tag</span>
+                    </button>
+                    <button class="grid-nav-item" data-index="10">
+                        <img src="images/products/product-11.webp" alt="Detector de humo"/>
+                        <span>Detector de humo</span>
+                    </button>
+                    <button class="grid-nav-item" data-index="11">
+                        <img src="images/products/product-12.webp" alt="CAM IP interior"/>
+                        <span>CAM IP interior</span>
+                    </button>
+                </div>
+                
+                <hr class="nav-divider"/>
+                
+                <!-- Product Slides Carousel -->
+                <div class="product-carousel-wrapper">
+                    <div class="product-carousel-slider" id="product-slider">
+                        <!-- Slide 0 -->
+                        <div class="product-slide active" data-slide-index="0">
+                            <div class="slide-image-box">
+                                <img src="images/products/product-1.webp" alt="Central de alarma"/>
+                            </div>
+                            <div class="slide-content-box">
+                                <h3 class="slide-title">Central de alarma</h3>
+                                <p class="slide-subtitle">Coordina todos los detectores</p>
+                                <ul class="slide-bullets">
+                                    <li>Conectada a Ethernet y red móvil</li>
+                                    <li>Alta fiabilidad por doble conexión</li>
+                                    <li>Gestión centralizada de todos los sensores</li>
+                                </ul>
+                            </div>
+                        </div>
+                        
+                        <!-- Slide 1 -->
+                        <div class="product-slide" data-slide-index="1">
+                            <div class="slide-image-box">
+                                <img src="images/products/product-2.webp" alt="PIR Cam"/>
+                            </div>
+                            <div class="slide-content-box">
+                                <h3 class="slide-title">PIR Cam</h3>
+                                <p class="slide-subtitle">Permite ver las alarmas en fotos</p>
+                                <ul class="slide-bullets">
+                                    <li>Captura en baja luz</li>
+                                    <li>Envía en menos de 9 s.</li>
+                                    <li>Imágenes encriptadas</li>
+                                </ul>
+                            </div>
+                        </div>
+                        
+                        <!-- Slide 2 -->
+                        <div class="product-slide" data-slide-index="2">
+                            <div class="slide-image-box">
+                                <img src="images/products/product-3.webp" alt="PIR"/>
+                            </div>
+                            <div class="slide-content-box">
+                                <h3 class="slide-title">PIR</h3>
+                                <p class="slide-subtitle">Avisa a la Central al primer indicio de intrusión</p>
+                                <ul class="slide-bullets">
+                                    <li>Con sensor de infrarrojos y procesado digital para evitar falsas alarmas</li>
+                                    <li>Regulación automática del sensor ante cambios de temperatura</li>
+                                    <li>Sistema Pet Friendly</li>
+                                </ul>
+                            </div>
+                        </div>
+                        
+                        <!-- Slide 3 -->
+                        <div class="product-slide" data-slide-index="3">
+                            <div class="slide-image-box">
+                                <img src="images/products/product-4.webp" alt="Magnético"/>
+                            </div>
+                            <div class="slide-content-box">
+                                <h3 class="slide-title">Magnético</h3>
+                                <p class="slide-subtitle">Detecta apertura de puertas y ventanas</p>
+                                <ul class="slide-bullets">
+                                    <li>Instalación sencilla sin cables</li>
+                                    <li>Batería de larga duración</li>
+                                    <li>Resistente a condiciones climáticas</li>
+                                </ul>
+                            </div>
+                        </div>
+                        
+                        <!-- Slide 4 -->
+                        <div class="product-slide" data-slide-index="4">
+                            <div class="slide-image-box">
+                                <img src="images/products/product-5.webp" alt="Rotura cristal"/>
+                            </div>
+                            <div class="slide-content-box">
+                                <h3 class="slide-title">Rotura cristal</h3>
+                                <p class="slide-subtitle">Detecta la rotura de cristales</p>
+                                <ul class="slide-bullets">
+                                    <li>Tecnología de doble detección</li>
+                                    <li>Alcance hasta 9 metros</li>
+                                    <li>Filtro anti falsas alarmas</li>
+                                </ul>
+                            </div>
+                        </div>
+                        
+                        <!-- Slide 5 -->
+                        <div class="product-slide" data-slide-index="5">
+                            <div class="slide-image-box">
+                                <img src="images/products/product-6.webp" alt="Cortina exterior"/>
+                            </div>
+                            <div class="slide-content-box">
+                                <h3 class="slide-title">Cortina exterior</h3>
+                                <p class="slide-subtitle">Para exteriores</p>
+                                <ul class="slide-bullets">
+                                    <li>Resistente a la intemperie IP65</li>
+                                    <li>Inmune a pequeños animales</li>
+                                    <li>Ángulo de detección 110°</li>
+                                </ul>
+                            </div>
+                        </div>
+                        
+                        <!-- Slide 6 -->
+                        <div class="product-slide" data-slide-index="6">
+                            <div class="slide-image-box">
+                                <img src="images/products/product-7.webp" alt="Teclado inalámbrico"/>
+                            </div>
+                            <div class="slide-content-box">
+                                <h3 class="slide-title">Teclado inalámbrico</h3>
+                                <p class="slide-subtitle">Control manual del sistema</p>
+                                <ul class="slide-bullets">
+                                    <li>Pantalla LCD retroiluminada</li>
+                                    <li>Códigos de usuario múltiples</li>
+                                    <li>Función de pánico silencioso</li>
+                                </ul>
+                            </div>
+                        </div>
+                        
+                        <!-- Slide 7 -->
+                        <div class="product-slide" data-slide-index="7">
+                            <div class="slide-image-box">
+                                <img src="images/products/product-8.webp" alt="Sirena interior"/>
+                            </div>
+                            <div class="slide-content-box">
+                                <h3 class="slide-title">Sirena interior</h3>
+                                <p class="slide-subtitle">Alerta sonora en el interior</p>
+                                <ul class="slide-bullets">
+                                    <li>110 dB de potencia sonora</li>
+                                    <li>LED de señalización visual</li>
+                                    <li>Batería de respaldo integrada</li>
+                                </ul>
+                            </div>
+                        </div>
+                        
+                        <!-- Slide 8 -->
+                        <div class="product-slide" data-slide-index="8">
+                            <div class="slide-image-box">
+                                <img src="images/products/product-9.webp" alt="Mando con botón SOS"/>
+                            </div>
+                            <div class="slide-content-box">
+                                <h3 class="slide-title">Mando con botón SOS</h3>
+                                <p class="slide-subtitle">Control remoto con emergencia</p>
+                                <ul class="slide-bullets">
+                                    <li>Botón de pánico integrado</li>
+                                    <li>Alcance hasta 100 metros</li>
+                                    <li>Diseño ergonómico</li>
+                                </ul>
+                            </div>
+                        </div>
+                        
+                        <!-- Slide 9 -->
+                        <div class="product-slide" data-slide-index="9">
+                            <div class="slide-image-box">
+                                <img src="images/products/product-10.webp" alt="Tag"/>
+                            </div>
+                            <div class="slide-content-box">
+                                <h3 class="slide-title">Tag</h3>
+                                <p class="slide-subtitle">Activación/desactivación automática</p>
+                                <ul class="slide-bullets">
+                                    <li>Detección automática de proximidad</li>
+                                    <li>Cifrado de alta seguridad</li>
+                                    <li>Batería de larga duración</li>
+                                </ul>
+                            </div>
+                        </div>
+                        
+                        <!-- Slide 10 -->
+                        <div class="product-slide" data-slide-index="10">
+                            <div class="slide-image-box">
+                                <img src="images/products/product-11.webp" alt="Detector de humo"/>
+                            </div>
+                            <div class="slide-content-box">
+                                <h3 class="slide-title">Detector de humo</h3>
+                                <p class="slide-subtitle">Protección contra incendios</p>
+                                <ul class="slide-bullets">
+                                    <li>Detección óptica avanzada</li>
+                                    <li>Autocomprobación periódica</li>
+                                    <li>Señal de batería baja</li>
+                                </ul>
+                            </div>
+                        </div>
+                        
+                        <!-- Slide 11 -->
+                        <div class="product-slide" data-slide-index="11">
+                            <div class="slide-image-box">
+                                <img src="images/products/product-12.webp" alt="CAM IP interior"/>
+                            </div>
+                            <div class="slide-content-box">
+                                <h3 class="slide-title">CAM IP interior</h3>
+                                <p class="slide-subtitle">Vigilancia en tiempo real</p>
+                                <ul class="slide-bullets">
+                                    <li>Resolución Full HD 1080p</li>
+                                    <li>Visión nocturna infrarroja</li>
+                                    <li>Acceso remoto desde móvil</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Carousel Controls -->
+                    <div class="carousel-nav-arrows">
+                        <button class="arrow-btn btn-prev" aria-label="Producto anterior" onclick="slidePrev()">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-chevron-left">
+                                <polyline points="15 18 9 12 15 6"></polyline>
+                            </svg>
+                        </button>
+                        <button class="arrow-btn btn-next" aria-label="Siguiente producto" onclick="slideNext()">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-chevron-right">
+                                <polyline points="9 18 15 12 9 6"></polyline>
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+                
+                <!-- Dot indicators -->
+                <div class="carousel-dots" id="carousel-dots">
+                    <button class="dot-btn active" data-index="0" aria-label="Ir al producto 1"></button>
+                    <button class="dot-btn" data-index="1" aria-label="Ir al producto 2"></button>
+                    <button class="dot-btn" data-index="2" aria-label="Ir al producto 3"></button>
+                    <button class="dot-btn" data-index="3" aria-label="Ir al producto 4"></button>
+                    <button class="dot-btn" data-index="4" aria-label="Ir al producto 5"></button>
+                    <button class="dot-btn" data-index="5" aria-label="Ir al producto 6"></button>
+                    <button class="dot-btn" data-index="6" aria-label="Ir al producto 7"></button>
+                    <button class="dot-btn" data-index="7" aria-label="Ir al producto 8"></button>
+                    <button class="dot-btn" data-index="8" aria-label="Ir al producto 9"></button>
+                    <button class="dot-btn" data-index="9" aria-label="Ir al producto 10"></button>
+                    <button class="dot-btn" data-index="10" aria-label="Ir al producto 11"></button>
+                    <button class="dot-btn" data-index="11" aria-label="Ir al producto 12"></button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Upgrade System Banner Section -->
+        <section class="upgrade-banner-section">
+            <div class="upgrade-banner-container">
+                <div class="upgrade-banner-card">
+                    <!-- Left: Info and Checklist -->
+                    <div class="upgrade-card-info">
+                        <h2 class="upgrade-title">Renueva tu Alarma</h2>
+                        <p class="upgrade-text">Mantén tu sistema siempre al día con una revisión completa y las mejoras<br>necesarias para seguir protegido.</p>
+                        
+                        <div class="upgrade-checklist">
+                            <div class="checklist-item">
+                                <span class="checkmark">✔</span>
+                                <span>Nuevas tecnologías</span>
+                            </div>
+                            <div class="checklist-item">
+                                <span class="checkmark">✔</span>
+                                <span>Cambio de baterías</span>
+                            </div>
+                            <div class="checklist-item">
+                                <span class="checkmark">✔</span>
+                                <span>Mantenimiento preventivo</span>
+                            </div>
+                            <div class="checklist-item">
+                                <span class="checkmark">✔</span>
+                                <span>Revisión técnica</span>
+                            </div>
+                            <div class="checklist-item">
+                                <span class="checkmark">✔</span>
+                                <span>Mejor calidad de imagen</span>
+                            </div>
+                        </div>
+
+                        <div class="upgrade-card-action">
+                            <button class="btn-orange pulse-btn" onclick="openCalculatorModal()">Quiero renovar mi sistema</button>
+                            <button class="btn-secondary-upgrade" onclick="openManualModal()">Sobre la App</button>
+                        </div>
+                    </div>
+                    
+                    <!-- Right: Product Image -->
+                    <div class="upgrade-card-image-box">
+                        <img src="images/banners/upgrade/upgrade-system.png" alt="Renueva tu Alarma" class="upgrade-system-img"/>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Segment Section: Adaptadas a tu casa y familia -->
+        <section class="banner-hogar-section">
+            <div class="banner-hogar-container">
+                <h2 class="banner-hogar-title">Encuentra la solución de seguridad que mejor se adapta a ti</h2>
+                <p class="banner-hogar-subtitle">Descubre la solución más adecuada según el tipo de propiedad.</p>
+                
+                <div class="banner-hogar-grid">
+                    <!-- Card 1: Piso -->
+                    <div class="hogar-card">
+                        <div class="hogar-card-img-wrapper">
+                            <img alt="Piso" src="images/banners/hogar/pisos.webp" class="hogar-card-img"/>
+                        </div>
+                        <div class="hogar-card-content">
+                            <h3 class="hogar-card-type">Piso</h3>
+                            <h4 class="hogar-card-sub">Tu hogar merece estar siempre protegido.</h4>
+                            <p class="hogar-card-desc">Evita intrusiones con una alarma inteligente, vídeo verificación y control desde tu móvil.</p>
+                        </div>
+                    </div>
+                    <!-- Card 2: Chalet -->
+                    <div class="hogar-card">
+                        <div class="hogar-card-img-wrapper">
+                            <img alt="Chalet" src="images/banners/hogar/chalets.webp" class="hogar-card-img"/>
+                        </div>
+                        <div class="hogar-card-content">
+                            <h3 class="hogar-card-type">Chalet</h3>
+                            <h4 class="hogar-card-sub">Más accesos, más puntos vulnerables.</h4>
+                            <p class="hogar-card-desc">Protege jardines, terrazas and entradas con sensores exteriores y videovigilancia.</p>
+                        </div>
+                    </div>
+                    <!-- Card 3: Ático -->
+                    <div class="hogar-card">
+                        <div class="hogar-card-img-wrapper">
+                            <img alt="Ático" src="images/banners/hogar/bajos.webp" class="hogar-card-img"/>
+                        </div>
+                        <div class="hogar-card-content">
+                            <h3 class="hogar-card-type">Ático</h3>
+                            <h4 class="hogar-card-sub">Las terrazas también necesitan protección.</h4>
+                            <p class="hogar-card-desc">Refuerza los accesos exteriores con sensores inteligentes y cámaras de seguridad.</p>
+                        </div>
+                    </div>
+                    <!-- Card 4: Segunda residencia -->
+                    <div class="hogar-card">
+                        <div class="hogar-card-img-wrapper">
+                            <img alt="Segunda residencia" src="images/banners/hogar/segunda.webp" class="hogar-card-img"/>
+                        </div>
+                        <div class="hogar-card-content">
+                            <h3 class="hogar-card-type">Segunda residencia</h3>
+                            <h4 class="hogar-card-sub">No dejes tu vivienda desprotegida.</h4>
+                            <p class="hogar-card-desc">Controla tu propiedad a distancia y recibe avisos en tiempo real ante cualquier incidencia.</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="hogar-actions">
+                    <button class="btn-orange" onclick="openCalculatorModal()">Calcula tu precio</button>
+                    <button class="btn-secondary" onclick="document.getElementById('contacto').scrollIntoView({behavior: 'smooth'})">Agenda una cita</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Second Residence Banner Section -->
+        <section id="segunda-vivienda" class="second-residence-section">
+            <div class="second-residence-container">
+                <div class="second-residence-flex">
+                    <div class="second-residence-image-box"></div>
+                    <div class="second-residence-info-box">
+                        <p class="residence-offer-tag">Oferta de alarmas para segunda residencia</p>
+                        <h2 class="residence-title">Disfruta de la tranquilidad también cuando no estás</h2>
+                        
+                        <div class="price-badge-box max-w-sm">
+                            <div class="price-badge-header">¡SOLO ESTE MES!</div>
+                            <div class="price-badge-body">
+                                <span class="price-label">Por<br/>solo</span>
+                                <span class="price-huge-number">19</span>
+                                <div class="price-badge-right">
+                                    <span class="price-euro-cents">'90<span class="price-currency">€/mes</span></span>
+                                    <span class="price-duration">durante 12 meses</span>
+                                </div>
+                            </div>
+                            <div class="price-badge-footer">Los 12 primeros meses | Instalación GRATIS | IVA incluido*</div>
+                        </div>
+                        
+                        <p class="residence-bullets-tag">GRATIS Instalación y alta<br/><span>¿Qué incluye?</span></p>
+                        <button class="btn-orange" onclick="document.getElementById('presupuesto').scrollIntoView({behavior: 'smooth'})">Calcula tu presupuesto sin compromiso</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Secondary Quote Form Section (Bottom Quote) -->
+        <section id="presupuesto" class="bottom-quote-section">
+            <div class="bottom-quote-container">
+                <h2 class="bottom-quote-title">¿Necesitas una alarma para tu hogar o tu segunda residencia?</h2>
+                <div class="bottom-quote-badge">
+                    ¡Solo este mes! Tu alarma por <span>19,90€ al mes</span>
+                </div>
+                
+                <div class="bottom-calculator-wrapper">
+                    <!-- Simple Contact Calculation / Duplicate Calculator Widget -->
+                    <div class="calculator-card-widget calculator-bordered-white">
+                        <div class="calculator-body">
+                            <form id="bottom-calculator-form" onsubmit="event.preventDefault();">
+                                <div class="bottom-form-fields text-white">
+                                    <h3 class="step-question">Calcula tu precio rellenando el formulario</h3>
+                                    
+                                    <div class="calc-options-row text-black mb-4">
+                                        <button type="button" class="calc-option-btn active-opt" id="bottom-type-vivienda" onclick="setBottomType('vivienda')">Vivienda</button>
+                                        <button type="button" class="calc-option-btn" id="bottom-type-negocio" onclick="setBottomType('negocio')">Negocio</button>
+                                    </div>
+                                    
+                                    <div class="calc-form-fields text-black">
+                                        <div class="input-group">
+                                            <input type="text" id="bottom-calc-nombre" placeholder="Nombre completo" required class="form-input"/>
+                                        </div>
+                                        <div class="input-group">
+                                            <input type="tel" id="bottom-calc-telefono" placeholder="Teléfono Móvil" required class="form-input"/>
+                                        </div>
+                                        <div class="input-group">
+                                            <input type="text" id="bottom-calc-cp" placeholder="Código Postal" maxLength="5" required class="form-input"/>
+                                        </div>
+                                        <label class="checkbox-legal-label text-white">
+                                            <input type="checkbox" id="bottom-calc-legal" required class="form-checkbox"/>
+                                            <span class="checkbox-text">Acepto la política de privacidad y condiciones.*</span>
+                                        </label>
+                                    </div>
+                                    
+                                    <div class="result-message-bottom" id="bottom-result-msg" style="display: none;">
+                                        <p class="text-green-500 font-bold mb-2">¡Formulario enviado con éxito!</p>
+                                        <p class="text-sm">Tu cotización estimada para <span id="bottom-res-type">vivienda</span> es de 19,90€/mes. En breve te llamaremos.</p>
+                                    </div>
+                                    
+                                    <button type="submit" class="btn-primary w-full mt-4" id="bottom-submit-btn" onclick="submitBottomForm()">Calcular tu precio</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- FAQs Accordion Section -->
+        <section id="faqs" class="faqs-section">
+            <h2 class="faqs-section-title">¡No te quedes con ninguna duda!</h2>
+            
+            <div class="faqs-container">
+                <div class="faqs-flex-wrapper">
+                    <!-- Left Tab Navigation Categories -->
+                    <div class="faq-tabs-nav" id="faq-categories">
+                        <button class="faq-category-btn active" data-category="sobre-alarmas">Sobre Alarmas Hogar</button>
+                        <button class="faq-category-btn" data-category="equipamiento">Tipos de alarmas y equipamiento</button>
+                        <button class="faq-category-btn" data-category="funcionamiento">Funcionamiento del sistema</button>
+                        <button class="faq-category-btn" data-category="proteccion">Seguridad y protección avanzada</button>
+                        <button class="faq-category-btn" data-category="instalacion">Instalación y mantenimiento</button>
+                        <button class="faq-category-btn" data-category="app-movil">Aplicación móvil y control remoto</button>
+                    </div>
+                    
+                    <!-- Right Question Details Box -->
+                    <div class="faq-content-box" id="faq-content-box">
+                        <!-- Questions will be dynamically rendered/switched by script.js, showing hardcoded values in html as active default -->
+                        <div class="faq-questions-container" id="sobre-alarmas-questions">
+                            <div class="faq-item active">
+                                <button class="faq-question-btn" aria-expanded="true">
+                                    <span>¿Qué es alarmashogar.es?</span>
+                                    <span class="faq-chevron-icon">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-chevron-up"><polyline points="18 15 12 9 6 15"></polyline></svg>
+                                    </span>
+                                </button>
+                                <div class="faq-answer-collapse">
+                                    <p>Alarmashogar.es es una división de <b>alarmasyseguridad.net</b>. Somos expertos en instalación de alarmas y sistemas de seguridad. Trabajamos con las mejores marcas del mercado para ofrecerte soluciones a medida que protejan tu hogar y negocio con la más alta tecnología. <br/><br/>Ofrecemos <b>instalación profesional, mantenimiento</b> y <b>soporte técnico</b> para garantizar tu tranquilidad.</p>
+                                </div>
+                            </div>
+                            
+                            <div class="faq-item">
+                                <button class="faq-question-btn" aria-expanded="false">
+                                    <span>¿Por qué confiar en alarmashogar.es para proteger lo que más amas?</span>
+                                    <span class="faq-chevron-icon">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-chevron-down"><polyline points="6 9 12 15 18 9"></polyline></svg>
+                                    </span>
+                                </button>
+                                <div class="faq-answer-collapse">
+                                    <p>Porque somos distribuidores autorizados de las principales compañías de seguridad en España, garantizando sistemas homologados de alta tecnología conectados las 24 horas del día a una Central Receptora de Alarmas (CRA) con aviso a la policía. Además, te aseguramos el mejor precio promocional del mercado de forma transparente.</p>
+                                </div>
+                            </div>
+                            
+                            <div class="faq-item">
+                                <button class="faq-question-btn" aria-expanded="false">
+                                    <span>¿En qué zonas operamos?</span>
+                                    <span class="faq-chevron-icon">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-chevron-down"><polyline points="6 9 12 15 18 9"></polyline></svg>
+                                    </span>
+                                </button>
+                                <div class="faq-answer-collapse">
+                                    <p>Ofrecemos cobertura de instalación y servicio técnico en todo el territorio nacional (España), contando con técnicos locales certificados en todas las provincias para garantizar una asistencia rápida y un mantenimiento eficaz.</p>
+                                </div>
+                            </div>
+                            
+                            <div class="faq-item">
+                                <button class="faq-question-btn" aria-expanded="false">
+                                    <span>¿Cuál es el teléfono de alarmashogar.es?</span>
+                                    <span class="faq-chevron-icon">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-chevron-down"><polyline points="6 9 12 15 18 9"></polyline></svg>
+                                    </span>
+                                </button>
+                                <div class="faq-answer-collapse">
+                                    <p>Puedes contactar con nosotros de forma gratuita llamando al teléfono <b>911 309 222</b> para información general y contrataciones en España, o al <b>935 565 012</b> si te encuentras en Cataluña. Nuestro horario de atención comercial es de lunes a viernes.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- FAQs Promo Banner Footer -->
+                <div class="faq-footer-banner">
+                    <p class="faq-banner-text">¡Super Promo!<br/><span>Tu alarma SOLO 19,90€ al mes</span></p>
+                    <button class="btn-black" onclick="document.getElementById('contacto').scrollIntoView({behavior: 'smooth'})">Infórmate gratis</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Traditional Contact Form Section -->
+        <section id="contacto" class="contact-form-section">
+            <div class="contact-form-container">
+                <div class="contact-form-header">
+                    <h2 class="contact-title">Contacta con nosotros</h2>
+                    <p class="contact-description">¿Tienes alguna pregunta sobre nuestros servicios? Completa el formulario y te responderemos a la mayor brevedad posible.</p>
+                </div>
+                
+                <div class="form-wrapper-box">
+                    <form id="contact-traditional-form" onsubmit="event.preventDefault(); submitContactForm();" class="bg-gray-light">
+                        <div class="form-grid-2">
+                            <div class="form-field-group">
+                                <label for="nombre" class="field-label">Nombre completo*</label>
+                                <input id="nombre" type="text" required class="form-input focus-orange" placeholder="Tu nombre"/>
+                            </div>
+                            <div class="form-field-group">
+                                <label for="email" class="field-label">Email*</label>
+                                <input id="email" type="email" required class="form-input focus-orange" placeholder="tu@email.com"/>
+                            </div>
+                        </div>
+                        
+                        <div class="form-grid-2">
+                            <div class="form-field-group">
+                                <label for="telefono" class="field-label">Teléfono*</label>
+                                <input id="telefono" type="tel" required class="form-input focus-orange" placeholder="600 000 000"/>
+                            </div>
+                            <div class="form-field-group">
+                                <label for="codigoPostal" class="field-label">Cód. Postal*</label>
+                                <input id="codigoPostal" type="text" required class="form-input focus-orange" placeholder="28001" maxLength="5"/>
+                            </div>
+                        </div>
+                        
+                        <div class="form-field-group mb-6">
+                            <label for="mensaje" class="field-label">Mensaje*</label>
+                            <textarea id="mensaje" rows="4" required class="form-input focus-orange" placeholder="¿En qué podemos ayudarte?"></textarea>
+                        </div>
+                        
+                        <div class="contact-success-msg" id="contact-success-msg" style="display: none;">
+                            <p class="font-bold">¡Mensaje enviado con éxito!</p>
+                            <p class="text-sm">Nos pondremos en contacto contigo en las próximas horas.</p>
+                        </div>
+                        
+                        <button type="submit" class="btn-orange w-full btn-gradient" id="contact-submit-btn">Enviar mensaje</button>
+                        <p class="legal-footnote-text">Al enviar este formulario, aceptas nuestra política de privacidad y el tratamiento de tus datos personales.</p>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Legal Conditions Section -->
+    <section class="conditions-collapse-section" id="conditions">
+        <div class="conditions-container">
+            <div class="conditions-header-trigger" onclick="toggleConditions()">
+                <h2>
+                    <button class="conditions-toggle-btn" type="button" aria-expanded="false" id="conds-btn">
+                        <span>Consulta las condiciones.</span>
+                        <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" class="conds-chevron">
+                            <path d="M8 10.5L3 5.5L4.5 4L8 7.5L11.5 4L13 5.5L8 10.5Z" fill="white"></path>
+                        </svg>
+                    </button>
+                </h2>
+            </div>
+            
+            <div class="conditions-content-body" id="conditions-body">
+                <div class="conditions-content-inner">
+                    <p><b>Promoción vigente hasta el 30 de septiembre</b></p>
+                    <p><b>Hogar:</b></p>
+                    <p>Pack Tranquilidad +: 19,90 € con IVA incluído durante 12 meses y luego 43,90 € al mes.</p>
+                    <p><b>Negocio (IVA no incluido):</b></p>
+                    <p>Pack Tranquilidad +: 19,90€ sin IVA incluído durante 12 primeros meses y luego 36,90€ al mes.</p>
+                    <p>Todas las promos Disponibles por tiempo limitado.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="main-footer">
+        <div class="footer-container">
+            <div class="footer-top-row">
+                <div class="footer-legal-links">
+                    <button class="footer-link-btn" onclick="openPrivacyModal()">Política de privacidad</button>
+                    <span>|</span>
+                    <button class="footer-link-btn" onclick="alert('Aviso Legal: alarmasyseguridad.net es una red de portales dedicados a la promoción de sistemas de seguridad en España.')">Aviso legal</button>
+                    <span>|</span>
+                    <button class="footer-link-btn" onclick="alert('Política de Cookies: Utilizamos cookies técnicas para garantizar el correcto funcionamiento del portal.')">Política de cookies</button>
+                    <span>|</span>
+                    <button class="footer-link-btn" onclick="alert('Quiénes Somos: Expertos dedicados al asesoramiento e instalación de alarmas para el hogar y negocios.')">Quiénes somos</button>
+                </div>
+            </div>
+            
+            <div class="footer-bottom-row">
+                <div class="footer-copyright">
+                    2026 Alarmas-hogar. <a target="_blank" rel="noopener noreferrer" href="https://alarmasyseguridad.net/">Alarmasyseguridad.net</a>
+                </div>
+                <div class="footer-distributor-badge">
+                    <img alt="Logo - Distribuidor Autorizado" src="images/logo.webp" class="footer-logo-badge-img"/>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+
+    <!-- Mobile Sticky Contact Bar Tab -->
+    <nav class="fixed-mobile-phone-tabs md-hide">
+        <a class="mobile-tab-item" href="tel:+34935565012">
+            <div class="mobile-tab-pricing">Por solo<br/>0.66€/día</div>
+        </a>
+        <a class="mobile-tab-item tab-active-border" href="tel:+34911309222">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-phone phone-rotated">
+                <path d="M13.832 16.568a1 1 0 0 0 1.213-.303l.355-.465A2 2 0 0 1 17 15h3a2 2 0 0 1 2 2v3a2 2 0 0 1-2 2A18 18 0 0 1 2 4a2 2 0 0 1 2-2h3a2 2 0 0 1 2 2v3a2 2 0 0 1-.8 1.6l-.468.351a1 1 0 0 0-.292 1.233 14 14 0 0 0 6.392 6.384"></path>
+            </svg>
+            <span>Llama ahora</span>
+        </a>
+    </nav>
+
+
+    <!-- Calculator Modal Overlay -->
+    <div class="calculator-modal-overlay" id="calculator-modal">
+        <div class="calculator-modal-box">
+            <button class="modal-close-trigger" onclick="closeCalculatorModal()" aria-label="Cerrar calculadora">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-x">
+                    <line x1="18" x2="6" y1="6" y2="18"></line>
+                    <line x1="6" x2="18" y1="6" y2="18"></line>
+                </svg>
+            </button>
+            
+            <!-- Calculator Widget inside modal -->
+            <div class="calculator-card-widget modal-calculator-widget">
+                <div class="calculator-header">
+                    <p class="calculator-header-title">Calcula el precio de tu alarma en menos de 1 minuto</p>
+                </div>
+                <div class="calculator-body">
+                    <!-- Progress Bar -->
+                    <div class="progress-bar-wrapper">
+                        <div class="progress-bar-container">
+                            <div class="progress-bar-fill" id="calc-progress" style="width: 20%;"></div>
+                        </div>
+                    </div>
+                    
+                    <form id="calculator-form" onsubmit="event.preventDefault();">
+                        <!-- Step 1: Vivienda o Negocio -->
+                        <div class="calculator-step active" id="step-1">
+                            <h3 class="step-question">¿Necesitas una alarma para tu vivienda o tu negocio?</h3>
+                            <div class="calc-options-row">
+                                <button type="button" class="calc-option-btn" data-value="vivienda" onclick="selectType('vivienda')">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-house option-icon">
+                                        <path d="M15 21v-8a1 1 0 0 0-1-1h-4a1 1 0 0 0-1 1v8"></path>
+                                        <path d="M3 10a2 2 0 0 1 .709-1.528l7-5.999a2 2 0 0 1 2.582 0l7 5.999A2 2 0 0 1 21 10v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path>
+                                    </svg>
+                                    <span class="option-label">Vivienda</span>
+                                    <div class="option-radio-dot"></div>
+                                </button>
+                                <button type="button" class="calc-option-btn" data-value="negocio" onclick="selectType('negocio')">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-building option-icon">
+                                        <rect width="16" height="20" x="4" y="2" rx="2" ry="2"></rect>
+                                        <path d="M9 22v-4h6v4"></path>
+                                        <path d="M8 6h.01"></path>
+                                        <path d="M16 6h.01"></path>
+                                        <path d="M8 10h.01"></path>
+                                        <path d="M16 10h.01"></path>
+                                        <path d="M8 14h.01"></path>
+                                        <path d="M16 14h.01"></path>
+                                    </svg>
+                                    <span class="option-label">Negocio</span>
+                                    <div class="option-radio-dot"></div>
+                                </button>
+                            </div>
+                        </div>
+                        
+                        <!-- Step 2: ¿Ya cuentas con alarma? -->
+                        <div class="calculator-step" id="step-2">
+                            <h3 class="step-question">¿Ya cuentas con un sistema de alarma?</h3>
+                            <div class="calc-options-row">
+                                <button type="button" class="calc-option-btn" data-value="si" onclick="selectHasAlarm('si')">
+                                    <span class="option-label text-center-opt">Sí</span>
+                                    <div class="option-radio-dot"></div>
+                                </button>
+                                <button type="button" class="calc-option-btn" data-value="no" onclick="selectHasAlarm('no')">
+                                    <span class="option-label text-center-opt">No</span>
+                                    <div class="option-radio-dot"></div>
+                                </button>
+                            </div>
+                        </div>
+                        
+                        <!-- Step 3 (Vivienda Only): Tipo de Vivienda -->
+                        <div class="calculator-step" id="step-3-vivienda">
+                            <h3 class="step-question">¿Qué tipo de vivienda es?</h3>
+                            <div class="calc-options-grid">
+                                <button type="button" class="calc-option-btn grid-item" data-value="piso" onclick="selectPropType('piso')">
+                                    <span class="option-label text-center-opt">Piso</span>
+                                    <div class="option-radio-dot"></div>
+                                </button>
+                                <button type="button" class="calc-option-btn grid-item" data-value="chalet" onclick="selectPropType('chalet')">
+                                    <span class="option-label text-center-opt">Chalet</span>
+                                    <div class="option-radio-dot"></div>
+                                </button>
+                                <button type="button" class="calc-option-btn grid-item" data-value="bajo" onclick="selectPropType('bajo')">
+                                    <span class="option-label text-center-opt">Bajo</span>
+                                    <div class="option-radio-dot"></div>
+                                </button>
+                                <button type="button" class="calc-option-btn grid-item" data-value="atico" onclick="selectPropType('atico')">
+                                    <span class="option-label text-center-opt">Ático</span>
+                                    <div class="option-radio-dot"></div>
+                                </button>
+                            </div>
+                        </div>
+                        
+                        <!-- Step 4 (Vivienda Only): Vivienda habitual o 2ª vivienda -->
+                        <div class="calculator-step" id="step-4-vivienda">
+                            <h3 class="step-question">¿Es tu vivienda habitual o una segunda vivienda?</h3>
+                            <div class="calc-options-row vertical-options">
+                                <button type="button" class="calc-option-btn w-full" data-value="habitual" onclick="selectResidenceType('habitual')">
+                                    <span class="option-label text-center-opt">Sí, es vivienda habitual</span>
+                                    <div class="option-radio-dot"></div>
+                                </button>
+                                <button type="button" class="calc-option-btn w-full" data-value="segunda" onclick="selectResidenceType('segunda')">
+                                    <span class="option-label text-center-opt">No, es 2ª vivienda</span>
+                                    <div class="option-radio-dot"></div>
+                                </button>
+                            </div>
+                        </div>
+                        
+                        <!-- Step 5 (Vivienda) / Step 3 (Negocio): Lead Form -->
+                        <div class="calculator-step" id="step-form">
+                            <h3 class="step-question">Introduce tus datos para calcular el precio</h3>
+                            <div class="calc-form-fields">
+                                <div class="input-group">
+                                    <input type="text" id="calc-nombre" placeholder="Nombre" required class="form-input"/>
+                                </div>
+                                <div class="input-group">
+                                    <input type="text" id="calc-apellidos" placeholder="Apellidos" required class="form-input"/>
+                                </div>
+                                <div class="input-group">
+                                    <input type="text" id="calc-cp" placeholder="Código Postal" maxLength="5" required class="form-input"/>
+                                </div>
+                                <div class="input-group">
+                                    <input type="tel" id="calc-telefono" placeholder="Teléfono Móvil" required class="form-input"/>
+                                </div>
+                                
+                                <label class="checkbox-legal-label">
+                                    <input type="checkbox" id="calc-legal" required class="form-checkbox"/>
+                                    <span class="checkbox-text">Acepto la política de privacidad y términos y condiciones.*</span>
+                                </label>
+                            </div>
+                        </div>
+                        
+                        <!-- Step 6: Calculation Result Mock -->
+                        <div class="calculator-step" id="step-result">
+                            <div class="success-result-box">
+                                <div class="success-icon-badge">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-check text-white">
+                                        <polyline points="20 6 9 17 4 12"></polyline>
+                                    </svg>
+                                </div>
+                                <h4 class="result-title">¡Presupuesto Calculado!</h4>
+                                <p class="result-price-text">Tu precio aproximado:</p>
+                                <div class="price-display-huge">19,90€<span class="price-display-cents">/mes</span></div>
+                                <p class="result-terms-text">Los primeros 12 meses, luego 43,90€/mes (IVA e instalación incluidos).</p>
+                                <p class="result-thanks-text">Un especialista se pondrá en contacto contigo a la brevedad para validar tu estudio de seguridad personalizado y confirmar la oferta.</p>
+                                <button type="button" class="btn-primary w-full mt-4" onclick="resetCalculator()">Calcular de nuevo</button>
+                            </div>
+                        </div>
+                        
+                        <!-- Step Nav Buttons -->
+                        <div class="calculator-nav" id="calc-nav-buttons">
+                            <button type="button" class="btn-back" id="btn-calc-back" onclick="prevStep()">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-chevron-left">
+                                    <polyline points="15 18 9 12 15 6"></polyline>
+                                </svg>
+                                <span>Atrás</span>
+                            </button>
+                            <button type="button" class="btn-continue" id="btn-calc-continue" disabled onclick="nextStep()">
+                                <span>Continuar</span>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-chevron-right">
+                                    <polyline points="9 18 15 12 9 6"></polyline>
+                                </svg>
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Privacy Policy Modal -->
+    <div class="privacy-modal-overlay" id="privacy-modal">
+        <div class="privacy-modal-box">
+            <button class="modal-close-trigger" onclick="closePrivacyModal()">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-x"><line x1="18" x2="6" y1="6" y2="18"></line><line x1="6" x2="18" y1="6" y2="18"></line></svg>
+            </button>
+            <h3 class="modal-title">Política de Privacidad</h3>
+            <div class="modal-body-content">
+                <p>En cumplimiento de lo dispuesto en el Reglamento General de Protección de Datos (RGPD) de la UE, te informamos que los datos personales facilitados en este portal serán incorporados a ficheros titularidad de <b>alarmasyseguridad.net</b> (Responsable del tratamiento: <i>info@alarmas-hogar.es</i>).</p>
+                <p><b>Finalidad:</b> La recolección de los datos es para el asesoramiento telefónico y la tarificación personalizada de sistemas de seguridad para su vivienda o negocio.</p>
+                <p><b>Legitimación:</b> El consentimiento explícito brindado al cumplimentar y enviar el formulario de cotización.</p>
+                <p><b>Destinatarios:</b> Los datos podrán ser comunicados a empresas instaladoras colaboradoras y operadoras autorizadas de alarmas de seguridad para realizar la contratación.</p>
+                <p><b>Derechos:</b> Tienes derecho a acceder, rectificar, limitar y suprimir tus datos en cualquier momento enviando un correo a <i>info@alarmas-hogar.es</i>.</p>
+            </div>
+            <button class="btn-orange w-full mt-4" onclick="closePrivacyModal()">Entendido</button>
+        </div>
+    </div>
+
+    <!-- Manual de Usuario Modal -->
+    <div class="privacy-modal-overlay" id="manual-modal">
+        <div class="privacy-modal-box" style="max-width: 650px;">
+            <button class="modal-close-trigger" onclick="closeManualModal()">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-x"><line x1="18" x2="6" y1="6" y2="18"></line><line x1="6" x2="18" y1="6" y2="18"></line></svg>
+            </button>
+            <h3 class="modal-title" style="margin-bottom: 20px; font-size: 24px;">
+                Conoce todo lo que hace nuestra App
+            </h3>
+            <div class="modal-body-content" style="max-height: 400px; overflow-y: auto; text-align: left; padding-right: 8px;">
+                <p style="margin-bottom: 16px; line-height: 1.6;">La aplicación te permite controlar y supervisar tu sistema de alarma de forma sencilla, rápida y segura, estés donde estés.</p>
+                
+                <h4 style="font-size: 17px; font-weight: 700; margin-top: 20px; margin-bottom: 12px; color: var(--primary-orange);">Funciones principales</h4>
+                <ul style="padding-left: 20px; margin-bottom: 20px; list-style-type: disc;">
+                    <li style="margin-bottom: 10px; line-height: 1.5;"><strong>Activación y desactivación remota:</strong> Activa o desactiva tu sistema de seguridad desde la pantalla principal de la aplicación.</li>
+                    <li style="margin-bottom: 10px; line-height: 1.5;"><strong>Notificaciones en tiempo real:</strong> Recibe alertas inmediatas ante cualquier incidencia, alarma o evento importante.</li>
+                    <li style="margin-bottom: 10px; line-height: 1.5;"><strong>Visualización de cámaras:</strong> Consulta las imágenes de las cámaras conectadas en tiempo real, desde cualquier lugar y en cualquier momento.</li>
+                </ul>
+
+                <h4 style="font-size: 17px; font-weight: 700; margin-top: 20px; margin-bottom: 12px; color: var(--primary-orange);">Configuración y puesta en marcha</h4>
+                <ol style="padding-left: 20px; margin-bottom: 20px; list-style-type: decimal;">
+                    <li style="margin-bottom: 10px; line-height: 1.5;">Descarga la aplicación desde <strong>Google Play</strong> (Android) o <strong>App Store</strong> (iOS).</li>
+                    <li style="margin-bottom: 10px; line-height: 1.5;">Inicia sesión con las credenciales facilitadas durante la instalación.</li>
+                    <li style="margin-bottom: 10px; line-height: 1.5;">Si necesitas activar el acceso a tu sistema, ponte en contacto con el técnico instalador o con la Central Receptora de Alarmas (CRA).</li>
+                    <li style="margin-bottom: 10px; line-height: 1.5;">Si tu instalación dispone de <strong>teclado inalámbrico</strong> o <strong>llaveros TAG</strong>, también podrás activar y desactivar el sistema acercando el TAG al lector, sin necesidad de utilizar la aplicación.</li>
+                </ol>
+
+                <h4 style="font-size: 17px; font-weight: 700; margin-top: 20px; margin-bottom: 12px; color: var(--primary-orange);">Recomendaciones de seguridad</h4>
+                <ul style="padding-left: 20px; margin-bottom: 20px; list-style-type: disc;">
+                    <li style="margin-bottom: 10px; line-height: 1.5;">Protege el acceso a tu dispositivo utilizando una contraseña segura o autenticación biométrica.</li>
+                    <li style="margin-bottom: 10px; line-height: 1.5;">Evita gestionar el sistema desde redes Wi-Fi públicas o no seguras.</li>
+                    <li style="margin-bottom: 10px; line-height: 1.5;">Comprueba periódicamente que los sensores, cámaras y demás dispositivos estén limpios y libres de obstrucciones para garantizar un funcionamiento óptimo.</li>
+                    <li style="margin-bottom: 10px; line-height: 1.5;">Ante una alarma real, el sistema enviará automáticamente una señal a la Central Receptora de Alarmas (CRA), donde se verificará el evento y se activará el protocolo de actuación correspondiente.</li>
+                </ul>
+
+                <p style="margin-top: 20px; font-weight: 600; line-height: 1.6;">Con la aplicación podrás gestionar tu sistema de seguridad de forma cómoda, manteniendo el control y la tranquilidad en todo momento.</p>
+            </div>
+            <button class="btn-orange mt-4" style="max-width: 180px; width: 100%; display: block; margin: 20px auto 0;" onclick="closeManualModal()">Entendido</button>
+        </div>
+    </div>
+
+    <!-- Scripts -->
+    <script src="script.js"></script>
+</body>
+</html>
